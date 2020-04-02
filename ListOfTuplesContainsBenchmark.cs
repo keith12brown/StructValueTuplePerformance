@@ -53,7 +53,7 @@ namespace ValueTuplePerf
       }
 
       [Benchmark]
-      public void ListTupleContains()
+      public void ListContainsTuple()
       {
          for (var i = 0; i < RUNS; i++)
          {
@@ -62,7 +62,7 @@ namespace ValueTuplePerf
       }
 
       [Benchmark]
-      public void ListStructContains()
+      public void ListContainsStruct()
       {
          for (var i = 0; i < RUNS; i++)
          {
