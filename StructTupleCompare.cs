@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using BenchmarkDotNet.Attributes;
 
-namespace ValueTuplePerf
+namespace StructValueTuplePerf
 {
    [MemoryDiagnoser]
    //[SimpleJob(targetCount: 5)]

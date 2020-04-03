@@ -1,7 +1,7 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
 
-namespace ValueTuplePerf
+namespace StructValueTuplePerf
 {
    class Program
    {
