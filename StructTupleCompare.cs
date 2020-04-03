@@ -89,7 +89,6 @@ namespace StructValueTuplePerf
       }
    }
 
-
    public struct Person : IEquatable<Person>
    {
       public int Age;
