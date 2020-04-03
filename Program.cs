@@ -7,7 +7,7 @@ namespace ValueTuplePerf
    {
       static void Main(string[] args)
       {
-         BenchmarkRunner.Run<ListOfTuplesContainsBenchmark>();
+         BenchmarkRunner.Run<StructTupleCompare>();
       }
    }
 }

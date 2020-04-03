@@ -1,0 +1,358 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 3 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\keith\Source\Repos\ValueTuplePerf\bin\Release\netcoreapp3.1\b588432a-6818-4095-a45e-bd7b728d89eb
+// command took 2.04s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\keith\Source\Repos\ValueTuplePerf\bin\Release\netcoreapp3.1\b588432a-6818-4095-a45e-bd7b728d89eb
+// command took 2.8s and exited with 0
+// ***** Done, took 00:00:04 (4.99 sec)   *****
+// Found 3 benchmarks:
+//   ListOfTuplesContainsBenchmark.ListTupleContains: Job-RKWZHS(IterationCount=5)
+//   ListOfTuplesContainsBenchmark.ListStructContains: Job-RKWZHS(IterationCount=5)
+//   ListOfTuplesContainsBenchmark.ListStructEqContains: Job-RKWZHS(IterationCount=5)
+
+// **************************
+// Benchmark: ListOfTuplesContainsBenchmark.ListTupleContains: Job-RKWZHS(IterationCount=5)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "b588432a-6818-4095-a45e-bd7b728d89eb.dll" --benchmarkName "ValueTuplePerf.ListOfTuplesContainsBenchmark.ListTupleContains" --job "IterationCount=5" --benchmarkId 0 in C:\Users\keith\Source\Repos\ValueTuplePerf\bin\Release\netcoreapp3.1\b588432a-6818-4095-a45e-bd7b728d89eb\bin\Release\netcoreapp3.1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-MFBFLD(IterationCount=5)
+
+OverheadJitting  1: 1 op, 281700.00 ns, 281.7000 us/op
+WorkloadJitting  1: 1 op, 1993200.00 ns, 1.9932 ms/op
+
+OverheadJitting  2: 16 op, 248300.00 ns, 15.5188 us/op
+WorkloadJitting  2: 16 op, 4559300.00 ns, 284.9563 us/op
+
+WorkloadPilot    1: 16 op, 3844100.00 ns, 240.2562 us/op
+WorkloadPilot    2: 32 op, 8815800.00 ns, 275.4937 us/op
+WorkloadPilot    3: 64 op, 17460800.00 ns, 272.8250 us/op
+WorkloadPilot    4: 128 op, 32710200.00 ns, 255.5484 us/op
+WorkloadPilot    5: 256 op, 63305300.00 ns, 247.2863 us/op
+WorkloadPilot    6: 512 op, 64440800.00 ns, 125.8609 us/op
+WorkloadPilot    7: 1024 op, 106718700.00 ns, 104.2175 us/op
+WorkloadPilot    8: 2048 op, 199569600.00 ns, 97.4461 us/op
+WorkloadPilot    9: 4096 op, 411677100.00 ns, 100.5071 us/op
+WorkloadPilot   10: 8192 op, 849027300.00 ns, 103.6410 us/op
+
+OverheadWarmup   1: 8192 op, 18100.00 ns, 2.2095 ns/op
+OverheadWarmup   2: 8192 op, 13700.00 ns, 1.6724 ns/op
+OverheadWarmup   3: 8192 op, 36000.00 ns, 4.3945 ns/op
+OverheadWarmup   4: 8192 op, 20400.00 ns, 2.4902 ns/op
+OverheadWarmup   5: 8192 op, 16200.00 ns, 1.9775 ns/op
+OverheadWarmup   6: 8192 op, 24700.00 ns, 3.0151 ns/op
+OverheadWarmup   7: 8192 op, 38700.00 ns, 4.7241 ns/op
+OverheadWarmup   8: 8192 op, 15200.00 ns, 1.8555 ns/op
+
+OverheadActual   1: 8192 op, 14800.00 ns, 1.8066 ns/op
+OverheadActual   2: 8192 op, 14500.00 ns, 1.7700 ns/op
+OverheadActual   3: 8192 op, 15100.00 ns, 1.8433 ns/op
+OverheadActual   4: 8192 op, 15200.00 ns, 1.8555 ns/op
+OverheadActual   5: 8192 op, 15100.00 ns, 1.8433 ns/op
+OverheadActual   6: 8192 op, 14500.00 ns, 1.7700 ns/op
+OverheadActual   7: 8192 op, 14900.00 ns, 1.8188 ns/op
+OverheadActual   8: 8192 op, 15800.00 ns, 1.9287 ns/op
+OverheadActual   9: 8192 op, 14800.00 ns, 1.8066 ns/op
+OverheadActual  10: 8192 op, 15100.00 ns, 1.8433 ns/op
+OverheadActual  11: 8192 op, 14800.00 ns, 1.8066 ns/op
+OverheadActual  12: 8192 op, 27200.00 ns, 3.3203 ns/op
+OverheadActual  13: 8192 op, 46500.00 ns, 5.6763 ns/op
+OverheadActual  14: 8192 op, 44200.00 ns, 5.3955 ns/op
+OverheadActual  15: 8192 op, 34000.00 ns, 4.1504 ns/op
+OverheadActual  16: 8192 op, 14900.00 ns, 1.8188 ns/op
+OverheadActual  17: 8192 op, 22900.00 ns, 2.7954 ns/op
+OverheadActual  18: 8192 op, 15200.00 ns, 1.8555 ns/op
+OverheadActual  19: 8192 op, 15100.00 ns, 1.8433 ns/op
+OverheadActual  20: 8192 op, 61000.00 ns, 7.4463 ns/op
+
+WorkloadWarmup   1: 8192 op, 837570200.00 ns, 102.2425 us/op
+WorkloadWarmup   2: 8192 op, 856896000.00 ns, 104.6016 us/op
+WorkloadWarmup   3: 8192 op, 847096500.00 ns, 103.4053 us/op
+WorkloadWarmup   4: 8192 op, 847901700.00 ns, 103.5036 us/op
+WorkloadWarmup   5: 8192 op, 862682800.00 ns, 105.3080 us/op
+WorkloadWarmup   6: 8192 op, 835932900.00 ns, 102.0426 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 8192 op, 849209500.00 ns, 103.6633 us/op
+WorkloadActual   2: 8192 op, 833232900.00 ns, 101.7130 us/op
+WorkloadActual   3: 8192 op, 831638000.00 ns, 101.5183 us/op
+WorkloadActual   4: 8192 op, 857321500.00 ns, 104.6535 us/op
+WorkloadActual   5: 8192 op, 831190600.00 ns, 101.4637 us/op
+
+// AfterActualRun
+WorkloadResult   1: 8192 op, 849194400.00 ns, 103.6614 us/op
+WorkloadResult   2: 8192 op, 833217800.00 ns, 101.7112 us/op
+WorkloadResult   3: 8192 op, 831622900.00 ns, 101.5165 us/op
+WorkloadResult   4: 8192 op, 857306400.00 ns, 104.6517 us/op
+WorkloadResult   5: 8192 op, 831175500.00 ns, 101.4619 us/op
+GC:  0 0 0 1288 8192
+Threading:  2 0 8192
+
+// AfterAll
+// Benchmark Process 6152 has exited with code 0
+
+Mean = 102.6005 us, StdErr = 0.6556 us (0.64%); N = 5, StdDev = 1.4659 us
+Min = 101.4619 us, Q1 = 101.4892 us, Median = 101.7112 us, Q3 = 104.1565 us, Max = 104.6517 us
+IQR = 2.6674 us, LowerFence = 97.4881 us, UpperFence = 108.1576 us
+ConfidenceInterval = [96.9559 us; 108.2452 us] (CI 99.9%), Margin = 5.6446 us (5.50% of Mean)
+Skewness = 0.4, Kurtosis = 0.98, MValue = 2
+
+// **************************
+// Benchmark: ListOfTuplesContainsBenchmark.ListStructContains: Job-RKWZHS(IterationCount=5)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "b588432a-6818-4095-a45e-bd7b728d89eb.dll" --benchmarkName "ValueTuplePerf.ListOfTuplesContainsBenchmark.ListStructContains" --job "IterationCount=5" --benchmarkId 1 in C:\Users\keith\Source\Repos\ValueTuplePerf\bin\Release\netcoreapp3.1\b588432a-6818-4095-a45e-bd7b728d89eb\bin\Release\netcoreapp3.1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-JAIFSQ(IterationCount=5)
+
+OverheadJitting  1: 1 op, 370900.00 ns, 370.9000 us/op
+WorkloadJitting  1: 1 op, 2433500.00 ns, 2.4335 ms/op
+
+OverheadJitting  2: 16 op, 281500.00 ns, 17.5938 us/op
+WorkloadJitting  2: 16 op, 11321400.00 ns, 707.5875 us/op
+
+WorkloadPilot    1: 16 op, 8950700.00 ns, 559.4188 us/op
+WorkloadPilot    2: 32 op, 17949700.00 ns, 560.9281 us/op
+WorkloadPilot    3: 64 op, 34582200.00 ns, 540.3469 us/op
+WorkloadPilot    4: 128 op, 70252000.00 ns, 548.8438 us/op
+WorkloadPilot    5: 256 op, 134061800.00 ns, 523.6789 us/op
+WorkloadPilot    6: 512 op, 190624900.00 ns, 372.3143 us/op
+WorkloadPilot    7: 1024 op, 372123500.00 ns, 363.4019 us/op
+WorkloadPilot    8: 2048 op, 744187500.00 ns, 363.3728 us/op
+
+OverheadWarmup   1: 2048 op, 7300.00 ns, 3.5645 ns/op
+OverheadWarmup   2: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadWarmup   3: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadWarmup   4: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadWarmup   5: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadWarmup   6: 2048 op, 4000.00 ns, 1.9531 ns/op
+
+OverheadActual   1: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual   2: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual   3: 2048 op, 5100.00 ns, 2.4902 ns/op
+OverheadActual   4: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual   5: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual   6: 2048 op, 5100.00 ns, 2.4902 ns/op
+OverheadActual   7: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual   8: 2048 op, 4300.00 ns, 2.0996 ns/op
+OverheadActual   9: 2048 op, 21200.00 ns, 10.3516 ns/op
+OverheadActual  10: 2048 op, 4700.00 ns, 2.2949 ns/op
+OverheadActual  11: 2048 op, 3900.00 ns, 1.9043 ns/op
+OverheadActual  12: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual  13: 2048 op, 4000.00 ns, 1.9531 ns/op
+OverheadActual  14: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  15: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  16: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  17: 2048 op, 4100.00 ns, 2.0020 ns/op
+OverheadActual  18: 2048 op, 4200.00 ns, 2.0508 ns/op
+
+WorkloadWarmup   1: 2048 op, 708685000.00 ns, 346.0376 us/op
+WorkloadWarmup   2: 2048 op, 712729200.00 ns, 348.0123 us/op
+WorkloadWarmup   3: 2048 op, 739587600.00 ns, 361.1268 us/op
+WorkloadWarmup   4: 2048 op, 709358100.00 ns, 346.3663 us/op
+WorkloadWarmup   5: 2048 op, 707540400.00 ns, 345.4787 us/op
+WorkloadWarmup   6: 2048 op, 730112600.00 ns, 356.5003 us/op
+WorkloadWarmup   7: 2048 op, 717087600.00 ns, 350.1404 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 2048 op, 710594800.00 ns, 346.9701 us/op
+WorkloadActual   2: 2048 op, 741468000.00 ns, 362.0449 us/op
+WorkloadActual   3: 2048 op, 687703000.00 ns, 335.7925 us/op
+WorkloadActual   4: 2048 op, 729049700.00 ns, 355.9813 us/op
+WorkloadActual   5: 2048 op, 739248100.00 ns, 360.9610 us/op
+
+// AfterActualRun
+WorkloadResult   1: 2048 op, 710590700.00 ns, 346.9681 us/op
+WorkloadResult   2: 2048 op, 741463900.00 ns, 362.0429 us/op
+WorkloadResult   3: 2048 op, 687698900.00 ns, 335.7905 us/op
+WorkloadResult   4: 2048 op, 729045600.00 ns, 355.9793 us/op
+WorkloadResult   5: 2048 op, 739244000.00 ns, 360.9590 us/op
+GC:  313 0 0 983040112 2048
+Threading:  2 0 2048
+
+// AfterAll
+// Benchmark Process 27136 has exited with code 0
+
+Mean = 352.3480 us, StdErr = 4.9215 us (1.40%); N = 5, StdDev = 11.0048 us
+Min = 335.7905 us, Q1 = 341.3793 us, Median = 355.9793 us, Q3 = 361.5010 us, Max = 362.0429 us
+IQR = 20.1217 us, LowerFence = 311.1968 us, UpperFence = 391.6834 us
+ConfidenceInterval = [309.9724 us; 394.7235 us] (CI 99.9%), Margin = 42.3755 us (12.03% of Mean)
+Skewness = -0.46, Kurtosis = 1.23, MValue = 2
+
+// **************************
+// Benchmark: ListOfTuplesContainsBenchmark.ListStructEqContains: Job-RKWZHS(IterationCount=5)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "b588432a-6818-4095-a45e-bd7b728d89eb.dll" --benchmarkName "ValueTuplePerf.ListOfTuplesContainsBenchmark.ListStructEqContains" --job "IterationCount=5" --benchmarkId 2 in C:\Users\keith\Source\Repos\ValueTuplePerf\bin\Release\netcoreapp3.1\b588432a-6818-4095-a45e-bd7b728d89eb\bin\Release\netcoreapp3.1
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: Job-TKEUWB(IterationCount=5)
+
+OverheadJitting  1: 1 op, 292400.00 ns, 292.4000 us/op
+WorkloadJitting  1: 1 op, 1679100.00 ns, 1.6791 ms/op
+
+OverheadJitting  2: 16 op, 230300.00 ns, 14.3938 us/op
+WorkloadJitting  2: 16 op, 4780100.00 ns, 298.7563 us/op
+
+WorkloadPilot    1: 16 op, 3709000.00 ns, 231.8125 us/op
+WorkloadPilot    2: 32 op, 8580800.00 ns, 268.1500 us/op
+WorkloadPilot    3: 64 op, 16463800.00 ns, 257.2469 us/op
+WorkloadPilot    4: 128 op, 31580000.00 ns, 246.7187 us/op
+WorkloadPilot    5: 256 op, 63820200.00 ns, 249.2977 us/op
+WorkloadPilot    6: 512 op, 84040900.00 ns, 164.1424 us/op
+WorkloadPilot    7: 1024 op, 103784700.00 ns, 101.3522 us/op
+WorkloadPilot    8: 2048 op, 208037400.00 ns, 101.5808 us/op
+WorkloadPilot    9: 4096 op, 438950900.00 ns, 107.1657 us/op
+WorkloadPilot   10: 8192 op, 802994200.00 ns, 98.0218 us/op
+
+OverheadWarmup   1: 8192 op, 18600.00 ns, 2.2705 ns/op
+OverheadWarmup   2: 8192 op, 14600.00 ns, 1.7822 ns/op
+OverheadWarmup   3: 8192 op, 15300.00 ns, 1.8677 ns/op
+OverheadWarmup   4: 8192 op, 15200.00 ns, 1.8555 ns/op
+OverheadWarmup   5: 8192 op, 15700.00 ns, 1.9165 ns/op
+OverheadWarmup   6: 8192 op, 15200.00 ns, 1.8555 ns/op
+
+OverheadActual   1: 8192 op, 14300.00 ns, 1.7456 ns/op
+OverheadActual   2: 8192 op, 15200.00 ns, 1.8555 ns/op
+OverheadActual   3: 8192 op, 15200.00 ns, 1.8555 ns/op
+OverheadActual   4: 8192 op, 15400.00 ns, 1.8799 ns/op
+OverheadActual   5: 8192 op, 29400.00 ns, 3.5889 ns/op
+OverheadActual   6: 8192 op, 15300.00 ns, 1.8677 ns/op
+OverheadActual   7: 8192 op, 15200.00 ns, 1.8555 ns/op
+OverheadActual   8: 8192 op, 15200.00 ns, 1.8555 ns/op
+OverheadActual   9: 8192 op, 25100.00 ns, 3.0640 ns/op
+OverheadActual  10: 8192 op, 15600.00 ns, 1.9043 ns/op
+OverheadActual  11: 8192 op, 30300.00 ns, 3.6987 ns/op
+OverheadActual  12: 8192 op, 52300.00 ns, 6.3843 ns/op
+OverheadActual  13: 8192 op, 15700.00 ns, 1.9165 ns/op
+OverheadActual  14: 8192 op, 15700.00 ns, 1.9165 ns/op
+OverheadActual  15: 8192 op, 38500.00 ns, 4.6997 ns/op
+OverheadActual  16: 8192 op, 19800.00 ns, 2.4170 ns/op
+OverheadActual  17: 8192 op, 15900.00 ns, 1.9409 ns/op
+OverheadActual  18: 8192 op, 15900.00 ns, 1.9409 ns/op
+OverheadActual  19: 8192 op, 15800.00 ns, 1.9287 ns/op
+OverheadActual  20: 8192 op, 15600.00 ns, 1.9043 ns/op
+
+WorkloadWarmup   1: 8192 op, 806458600.00 ns, 98.4447 us/op
+WorkloadWarmup   2: 8192 op, 839007500.00 ns, 102.4179 us/op
+WorkloadWarmup   3: 8192 op, 808218300.00 ns, 98.6595 us/op
+WorkloadWarmup   4: 8192 op, 823756200.00 ns, 100.5562 us/op
+WorkloadWarmup   5: 8192 op, 800007400.00 ns, 97.6572 us/op
+WorkloadWarmup   6: 8192 op, 801190100.00 ns, 97.8015 us/op
+
+// BeforeActualRun
+WorkloadActual   1: 8192 op, 828636400.00 ns, 101.1519 us/op
+WorkloadActual   2: 8192 op, 803924600.00 ns, 98.1353 us/op
+WorkloadActual   3: 8192 op, 799916900.00 ns, 97.6461 us/op
+WorkloadActual   4: 8192 op, 824483400.00 ns, 100.6449 us/op
+WorkloadActual   5: 8192 op, 799790400.00 ns, 97.6307 us/op
+
+// AfterActualRun
+WorkloadResult   1: 8192 op, 828620700.00 ns, 101.1500 us/op
+WorkloadResult   2: 8192 op, 803908900.00 ns, 98.1334 us/op
+WorkloadResult   3: 8192 op, 799901200.00 ns, 97.6442 us/op
+WorkloadResult   4: 8192 op, 824467700.00 ns, 100.6430 us/op
+WorkloadResult   5: 8192 op, 799774700.00 ns, 97.6287 us/op
+GC:  0 0 0 0 8192
+Threading:  2 0 8192
+
+// AfterAll
+// Benchmark Process 26116 has exited with code 0
+
+Mean = 99.0399 us, StdErr = 0.7676 us (0.78%); N = 5, StdDev = 1.7164 us
+Min = 97.6287 us, Q1 = 97.6365 us, Median = 98.1334 us, Q3 = 100.8965 us, Max = 101.1500 us
+IQR = 3.2600 us, LowerFence = 92.7464 us, UpperFence = 105.7866 us
+ConfidenceInterval = [92.4308 us; 105.6490 us] (CI 99.9%), Margin = 6.6091 us (6.67% of Mean)
+Skewness = 0.29, Kurtosis = 0.8, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\ValueTuplePerf.ListOfTuplesContainsBenchmark-report.csv
+  BenchmarkDotNet.Artifacts\results\ValueTuplePerf.ListOfTuplesContainsBenchmark-report-github.md
+  BenchmarkDotNet.Artifacts\results\ValueTuplePerf.ListOfTuplesContainsBenchmark-report.html
+
+// * Detailed results *
+ListOfTuplesContainsBenchmark.ListTupleContains: Job-RKWZHS(IterationCount=5)
+Runtime = .NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 102.6005 us, StdErr = 0.6556 us (0.64%); N = 5, StdDev = 1.4659 us
+Min = 101.4619 us, Q1 = 101.4892 us, Median = 101.7112 us, Q3 = 104.1565 us, Max = 104.6517 us
+IQR = 2.6674 us, LowerFence = 97.4881 us, UpperFence = 108.1576 us
+ConfidenceInterval = [96.9559 us; 108.2452 us] (CI 99.9%), Margin = 5.6446 us (5.50% of Mean)
+Skewness = 0.4, Kurtosis = 0.98, MValue = 2
+-------------------- Histogram --------------------
+[100.712 us ; 105.198 us) | @@@@@
+---------------------------------------------------
+
+ListOfTuplesContainsBenchmark.ListStructContains: Job-RKWZHS(IterationCount=5)
+Runtime = .NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 352.3480 us, StdErr = 4.9215 us (1.40%); N = 5, StdDev = 11.0048 us
+Min = 335.7905 us, Q1 = 341.3793 us, Median = 355.9793 us, Q3 = 361.5010 us, Max = 362.0429 us
+IQR = 20.1217 us, LowerFence = 311.1968 us, UpperFence = 391.6834 us
+ConfidenceInterval = [309.9724 us; 394.7235 us] (CI 99.9%), Margin = 42.3755 us (12.03% of Mean)
+Skewness = -0.46, Kurtosis = 1.23, MValue = 2
+-------------------- Histogram --------------------
+[335.748 us ; 347.010 us) | @@
+[347.010 us ; 364.642 us) | @@@
+---------------------------------------------------
+
+ListOfTuplesContainsBenchmark.ListStructEqContains: Job-RKWZHS(IterationCount=5)
+Runtime = .NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 99.0399 us, StdErr = 0.7676 us (0.78%); N = 5, StdDev = 1.7164 us
+Min = 97.6287 us, Q1 = 97.6365 us, Median = 98.1334 us, Q3 = 100.8965 us, Max = 101.1500 us
+IQR = 3.2600 us, LowerFence = 92.7464 us, UpperFence = 105.7866 us
+ConfidenceInterval = [92.4308 us; 105.6490 us] (CI 99.9%), Margin = 6.6091 us (6.67% of Mean)
+Skewness = 0.29, Kurtosis = 0.8, MValue = 2
+-------------------- Histogram --------------------
+[96.750 us ;  99.888 us) | @@@
+[99.888 us ; 102.028 us) | @@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.19041
+Intel Core i7-6700HQ CPU 2.60GHz (Skylake), 1 CPU, 8 logical and 4 physical cores
+.NET Core SDK=3.1.200
+  [Host]     : .NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT
+  Job-RKWZHS : .NET Core 3.1.2 (CoreCLR 4.700.20.6602, CoreFX 4.700.20.6702), X64 RyuJIT
+
+IterationCount=5  
+
+|               Method |      Mean |     Error |    StdDev |    Gen 0 | Gen 1 | Gen 2 | Allocated |
+|--------------------- |----------:|----------:|----------:|---------:|------:|------:|----------:|
+|    ListTupleContains | 102.60 us |  5.645 us |  1.466 us |        - |     - |     - |         - |
+|   ListStructContains | 352.35 us | 42.376 us | 11.005 us | 152.8320 |     - |     - |  480000 B |
+| ListStructEqContains |  99.04 us |  6.609 us |  1.716 us |        - |     - |     - |         - |
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Gen 0     : GC Generation 0 collects per 1000 operations
+  Gen 1     : GC Generation 1 collects per 1000 operations
+  Gen 2     : GC Generation 2 collects per 1000 operations
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 us      : 1 Microsecond (0.000001 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:00:35 (35.85 sec), executed benchmarks: 3
+
+Global total time: 00:00:40 (40.85 sec), executed benchmarks: 3
+// * Artifacts cleanup *
