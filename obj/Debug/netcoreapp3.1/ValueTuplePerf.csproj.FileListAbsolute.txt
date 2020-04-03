@@ -1,4 +1,0 @@
-C:\Users\keith\Source\Repos\ValueTuplePerf\bin\Debug\netcoreapp3.1\ValueTuplePerf.exe
-C:\Users\keith\Source\Repos\ValueTuplePerf\obj\Debug\netcoreapp3.1\ValueTuplePerf.csprojAssemblyReference.cache
-C:\Users\keith\Source\Repos\ValueTuplePerf\obj\Debug\netcoreapp3.1\ValueTuplePerf.AssemblyInfoInputs.cache
-C:\Users\keith\Source\Repos\ValueTuplePerf\obj\Debug\netcoreapp3.1\ValueTuplePerf.AssemblyInfo.cs
